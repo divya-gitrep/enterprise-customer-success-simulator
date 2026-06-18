@@ -272,6 +272,45 @@ export const routes: SimulatorRoute[] = [
     ],
   },
   {
+    title: "Customer Success Scenarios",
+    href: "/customer-success-scenarios",
+    shortLabel: "Scenarios",
+    description: "Practice customer success decisions and review decision quality.",
+    stage: "Simulation",
+    status: "Interactive",
+    owner: "Rowan Vale",
+    risk: "Medium",
+    summary:
+      "Scenario training helps the account team respond to adoption changes with evidence-based actions and executive-ready next steps.",
+    metrics: [
+      { label: "Scenario", value: "Adoption drop", detail: "Platform adoption down 25%" },
+      { label: "Actions", value: "4", detail: "One best recommended action" },
+      { label: "Decision quality", value: "Tracked", detail: "Score updates after selection" },
+    ],
+    priorities: [
+      "Diagnose whether the adoption drop is isolated by role, team, workflow, or product area.",
+      "Tie the response plan to measurable adoption recovery targets.",
+      "Coach the account team to choose evidence-first actions over generic outreach.",
+    ],
+    signals: [
+      { label: "Adoption trend", value: "-25%", tone: "risk" },
+      { label: "Executive risk", value: "Elevated", tone: "watch" },
+      { label: "Recovery path", value: "Actionable", tone: "good" },
+    ],
+    timeline: [
+      {
+        date: "Day 0",
+        event: "Adoption drop detected",
+        detail: "Active platform usage falls 25% across two high-value teams.",
+      },
+      {
+        date: "Day 5",
+        event: "Recovery checkpoint",
+        detail: "Review usage recovery, stakeholder response, and value blockers.",
+      },
+    ],
+  },
+  {
     title: "Expansion Opportunities",
     href: "/expansion-opportunities",
     shortLabel: "Expansion",
