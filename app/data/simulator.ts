@@ -311,6 +311,45 @@ export const routes: SimulatorRoute[] = [
     ],
   },
   {
+    title: "Customer Intelligence Hub",
+    href: "/customer-intelligence-hub",
+    shortLabel: "Intelligence",
+    description: "Unify mock Salesforce, Slack, and product usage signals into customer health insight.",
+    stage: "Intelligence",
+    status: "Mock signals",
+    owner: "Rowan Vale",
+    risk: "Medium",
+    summary:
+      "The customer intelligence hub demonstrates how commercial, collaboration, and product usage signals could inform the simulator without connecting real APIs yet.",
+    metrics: [
+      { label: "Data sources", value: "3", detail: "Salesforce, Slack, usage" },
+      { label: "Health model", value: "Unified", detail: "Weighted mock scoring" },
+      { label: "Recommended action", value: "Generated", detail: "TSM next best action" },
+    ],
+    priorities: [
+      "Review commercial, sentiment, and usage risks in one account view.",
+      "Prioritize the TSM action using the lowest-scoring signal clusters.",
+      "Keep mock data separated from future API integration work.",
+    ],
+    signals: [
+      { label: "Commercial signal", value: "Watch", tone: "watch" },
+      { label: "Slack sentiment", value: "Mixed", tone: "watch" },
+      { label: "Usage health", value: "Stable", tone: "good" },
+    ],
+    timeline: [
+      {
+        date: "Mock",
+        event: "Signals ingested",
+        detail: "Salesforce, Slack, and staging usage data are loaded from local mock files.",
+      },
+      {
+        date: "Next",
+        event: "TSM action generated",
+        detail: "Unified health score and top risk reasons inform the recommended account action.",
+      },
+    ],
+  },
+  {
     title: "Expansion Opportunities",
     href: "/expansion-opportunities",
     shortLabel: "Expansion",
