@@ -177,3 +177,35 @@ Explain why the best action is correct.
 
 Track decision quality.
 
+# Prompt 11
+## Customer Intelligence Hub
+
+Build a new Customer Intelligence Hub module for the existing Enterprise Customer Success Simulator app.
+
+Add a new sidebar navigation item called Customer Intelligence Hub.
+
+The page should show how Salesforce, Slack, and Staging/Product Usage data could be fed into the simulator using mock data sources.
+
+Create three mock data files:
+- data/salesforce-signals.ts
+- data/slack-signals.ts
+- data/staging-usage-signals.ts
+
+Create a reusable health scoring utility that combines these signals into:
+- Unified health score
+- Risk level
+- Key risk reasons
+- Recommended TSM action
+
+Page sections:
+1. Salesforce Signals
+2. Slack Signals
+3. Staging/Product Usage Signals
+4. Unified Customer Health Insight
+5. Recommended Action Plan
+
+Use existing layout, navigation, styling, TypeScript, Tailwind CSS, and mock data patterns already present in the app.
+
+Do not use real Salesforce or Slack APIs yet.
+Do not add authentication.
+Do not restructure the application.

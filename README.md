@@ -278,3 +278,9 @@ This project allowed me to explore how Technical Success Managers help organizat
 ## Disclaimer
 
 This project is a portfolio and learning project created to demonstrate Technical Success Manager concepts and workflows. The customer data, metrics, scenarios, and outcomes presented are fictional and intended solely for educational and demonstration purposes.
+
+## Author & AI Collaboration
+
+Created by Divya Shakya.
+
+This project was developed through human-AI collaboration. ChatGPT and other AI-assisted development tools were used for ideation, code generation support, content refinement, and technical guidance. The project design, implementation decisions, testing approach, and final deliverables were reviewed and validated by the author.
