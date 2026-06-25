@@ -23,7 +23,8 @@ export function SideNav() {
         </div>
         <nav className="flex gap-2 overflow-x-auto px-4 py-3 sm:px-6 lg:flex-1 lg:flex-col lg:overflow-visible lg:px-3">
           {routes.map((route, index) => {
-            const isActive = pathname === route.href;
+            const isActive =
+              pathname === route.href || pathname.startsWith(`${route.href}/`);
 
             return (
               <Link

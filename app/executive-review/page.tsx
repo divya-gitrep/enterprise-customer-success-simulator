@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getRouteByHref } from "../data/simulator";
 
 const qbrSections = [
@@ -106,6 +107,14 @@ export default function ExecutiveReviewPage() {
               outcomes, risks, recommendations, and next-quarter execution
               priorities for the customer success program.
             </p>
+            <div className="mt-5">
+              <Link
+                href="/executive-review/prepare"
+                className="inline-flex rounded-md bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Prepare Executive Business Review
+              </Link>
+            </div>
           </div>
           <div className="grid gap-3 sm:grid-cols-2 xl:w-[420px]">
             <ExecutiveFact label="Executive owner" value={route.owner} />

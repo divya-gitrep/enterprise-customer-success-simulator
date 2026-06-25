@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { calculateUnifiedHealthInsight } from "../../data/customer-health-scoring";
 import { salesforceSignals } from "../../data/salesforce-signals";
 import { slackSignals } from "../../data/slack-signals";
@@ -41,6 +42,28 @@ export default function CustomerIntelligenceHubPage() {
             <HubFact label="Authentication" value="Not required" />
             <HubFact label="Model owner" value={route.owner} />
           </div>
+        </div>
+      </section>
+
+      <section className="rounded-md border border-cyan-200 bg-cyan-50 p-5 shadow-sm sm:p-6">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h3 className="text-lg font-semibold text-cyan-950">
+              Turn these signals into an executive review story
+            </h3>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-cyan-900">
+              Generate a TSM briefing that combines intelligence signals,
+              account health, value realized, incident history, expansion
+              recommendations, and QBR content into a customer-facing CBR/QBR
+              narrative.
+            </p>
+          </div>
+          <Link
+            href="/executive-review/prepare"
+            className="rounded-md bg-[#101828] px-4 py-2 text-center text-sm font-semibold text-white transition hover:bg-slate-800"
+          >
+            Prepare Executive Business Review
+          </Link>
         </div>
       </section>
 
